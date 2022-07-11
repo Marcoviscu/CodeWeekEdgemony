@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+body {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  background-color: #141313;
+}
+.main-navbar {
+  display: flex;
+  gap: 1rem;
+  background-color: #141313;
+  color: #797979;
+  font-family: "Bebas Neue";
+}
+
+.main-navbar img {
+  padding-left: 20px;
+  width: 4rem;
+  height: 4rem;
+}
+
+.main-navbar-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  list-style-type: none;
+  transition: 0.6s;
+}
+
+.main-nav-content:hover {
+  transition: 0.6s;
+  transform: scale(0.95);
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+.main-wrapper-section {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.film-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.card {
+  height: 310px;
+  width: 215px;
+  transition: box-shadow 0.3s;
+}
+
+.card :hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+  transition-delay: 1s;
+  box-shadow: 2px 2px 55px rgba(0, 0, 0, 0.2), 0 0 60px rgba(59, 59, 59, 0.973);
+}
+
+.card img {
+  border-radius: 2%;
+  height: 310px;
+  width: 215px;
+}
+
+.main-footer {
+  color: #4d4d4d;
+  margin: 10px 0px;
+  padding-bottom: 5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #141313;
+  font-size: small;
+}
+
+.member-footer-links {
+  gap: 5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  list-style-type: none;
+}
+
+.member-footer-link-wrapper:hover {
+  text-decoration: underline;
+  color: rgb(107, 107, 107);
+  cursor: pointer;
+}
+
+.member-footer-service {
+  border: 1.5px solid #4d4d4d;
+  padding: 10px;
+}
+
+.member-footer-service:hover {
+  text-decoration: underline;
+  color: rgb(107, 107, 107);
+  border: 1.5px solid rgb(107, 107, 107);
+}
