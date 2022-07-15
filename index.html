@@ -6,51 +6,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
   </head>
   <body>
-    <section class="main-navbar">
+    <div id="back-home"></div>
+    <!-- Sign up form-->
+    <div class='register-signin'> 
+      <div class="title-sign-in">
+        <img src="./src/logoipsum-logo-39.svg" alt="logo" />
+        <div class="main-title"><p class="title">CodeWeekEDGEMONY</p></div>
+      </div>
+      <div class="sign-in">
+        <h3>Hi! if you are not registered you can sign up now!</h3>
+        <div class="U-p">
+          <form action="input" class="form-sign-in">
+            <p>Insert your Email *</p>
+            <input type="email" name="email" placeholder="Email" class="username-email"/>
+            <p class="email-example">example@example.com</p>
+            
+            <p>Insert your password *</p>
+            <input type="password" name="Password" placeholder="Password" class="username-password"/>
+            <button class="btn-sign-in"   type="submit">Sign-In</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Navbar -->
+  <section class="main-navbar">
+    <div class="primary-navbar">
+
       <img src="./src/logoipsum-logo-39.svg" alt="logo" />
       <div class="main-title"><p>CodeWeekEDGEMONY</p></div>
-      <div class="main-navbar-ref">
-          <ul class="main-navbar-wrapper">
-              <li class="main-nav-content"><span>Home</span></li>
-              <li class="main-nav-content"><span>Serie TV</span></li>
-              <li class="main-nav-content"><span>Film</span></li>
-              <li class="main-nav-content"><span>Nuovi e Popolari</span></li>
-            </div>
-      </ul>
-    </section>
-
-          <div class="main-wrapper-section">
-              
-        </div>
+      <ul class="main-navbar-wrapper">
+        <li class="main-nav-content">Home</li>
+        <li class="main-nav-content"><a href="#film">Film</a></li>
+        <li class="main-nav-content go-ref"><a href="#go-ref"> References</a></li>
+        </ul>
+    </div>
+    <div class="secondary-navbar">
+      <button class="user-menu"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <button class="user-menu">
+        <i class="fa-solid fa-bell"></i>
+      </button>
+      <button class="user-menu">
+        <i class="fa-solid fa-user"></i>
+        <i class="fa-solid fa-caret-down"></i>
+      </button>
+      
+    </div>
     
-    <div class="main-footer">
-      <div class="social-links">
-        DA METTERE LOGHI DEI SOCIAL
-      </div>
-      <ul class="member-footer-links">
-        <li class="member-footer-link-wrapper"><span class="member-footer-link-content">Audio e sottotitoli</span></li>
-        <li class="member-footer-link-wrapper"><span class="member-footer-link-content">Audiodescrizione</span></li>
-        <li class="member-footer-link-wrapper"><span class="member-footer-link-content">Centro assistenza</span></li>
-        <li class="member-footer-link-wrapper"><span class="member-footer-link-content">Carte regalo</span></li>
-        <li class="member-footer-link-wrapper"><span class="member-footer-link-content">Media Center</span></li>
-        <li class="member-footer-link-wrapper"><span class="member-footer-link-content">Rapporti con gli investitori</span></li>
-        <li class="member-footer-link-wrapper"><span class="member-footer-link-content">Opportunità di lavoro</span></li>
-        <li class="member-footer-link-wrapper"><span class="member-footer-link-content">Condizioni di utilizzo</span></li>
-        <li class="member-footer-link-wrapper"><span class="member-footer-link-content">Privacy</span></li>
-        <li class="member-footer-link-wrapper"><span class="member-footer-link-content">Note legali</span></li>
-        <li class="member-footer-link-wrapper"><span class="member-footer-link-content">Preferenze per i cookie</span></li>
-        <li class="member-footer-link-wrapper"><span class="member-footer-link-content">Informazioni sull'azienda</span></li>
-        <li class="member-footer-link-wrapper"><span class="member-footer-link-content">Contattaci</span></li>
+        
+  </section>
 
-      </ul>
-      <div class="member-footer-service">
-        </button>Codice di servizio</button>
+  <!-- Navigation -->
+  <main class="main-content">
+
+    
+    
+    <div><h1 class="film-text">Film List</h1></div>
+    
+    <div class="grid-test">
+      <div id="film" class="main-wrapper-section">
       </div>
     </div>
 
-    <script src="./script.js" type="module"></script>
-    <script src="./utils.js" type="module"></script>
+    <div class="modal"></div>
+    
+    
+    
+    
+  </main>
+  <!-- Footer -->
+  <div class="main-footer">
+    
+    <div class="social-links">
+      <a href="https://github.com/Marcoviscu" target="_blank"> <i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/marco-viscuso/" target="_blank"><i class="fa-brands fa-linkedin"></i></a> 
+      <a href=""></a>
+
+
+
+    </div>
+
+    <div class="back-up">
+        
+        <a href="#back-home"><i class="fa-solid fa-arrow-up"></i>Home</a>
+        <div id="go-ref">.</div>
+      </div>
+    
+    <ul class="member-footer-links">
+      <li class="member-footer-link-wrapper"><a href="#" class="member-footer-link-content">Audio and Subtitles </a></li>
+        <li class="member-footer-link-wrapper"><a href="#" class="member-footer-link-content">Audio Description</a></li>
+        <li class="member-footer-link-wrapper"><a href="#" class="member-footer-link-content">Help Center</a></li>
+        <li class="member-footer-link-wrapper"><a href="#" class="member-footer-link-content">Gift Cards</a></li>
+        <li class="member-footer-link-wrapper"><a href="#" class="member-footer-link-content">Media Center</a></li>
+        <li class="member-footer-link-wrapper"><a href="#" class="member-footer-link-content">Investor Relations</a></li>
+        <li class="member-footer-link-wrapper"><a href="#" class="member-footer-link-content">Jobs</a></li>
+        <li class="member-footer-link-wrapper"><a href="#" class="member-footer-link-content">Terms of use</a></li>
+        <li class="member-footer-link-wrapper"><a href="#" class="member-footer-link-content">Privacy</a></li>
+        <li class="member-footer-link-wrapper"><a href="#" class="member-footer-link-content">Legal Notes</a></li> 
+        <li class="member-footer-link-wrapper"><a href="#" class="member-footer-link-content">Cookie Preferences</a></li>
+        <li class="member-footer-link-wrapper"><a href="#" class="member-footer-link-content">Corporate Information</a></li>
+        <li class="member-footer-link-wrapper"><a href="#" class="member-footer-link-content">Contact Us</a></li>
+    </ul>
+    
+  </div>
+  <div class="member-footer-service">
+  </button>Made with 💓 by Marco Viscuso</button>
+</div>
+  
+
+
+  <!-- Scripts -->
+    <script src="./script.js" ></script>
   </body>
 </html>
